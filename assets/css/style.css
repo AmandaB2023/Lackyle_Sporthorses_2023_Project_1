@@ -134,41 +134,49 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
+}
 
-    /* Navigation Menu items will in a row on larger screens*/
-    #menu {
-        display: flex;
-    }
+/* Navigation Menu items will in a row on larger screens*/
+#menu {
+    display: flex;
+}
 
-    /*To space menu items out*/
-    #menu>li {
-        padding-left: 1rem;
-    }
+/*To space menu items out*/
+#menu>li {
+    padding-left: 1rem;
+}
 
-    /*X hidden on larger screens*/
-    .nav-toggle-label {
-        display: none;
-    }
+/*X hidden on larger screens*/
+.nav-toggle-label {
+    display: none;
+}
 
-    /*Logo will display bigger on larger screen size*/
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
+/*Logo will display bigger on larger screen size*/
+#logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+}
 
-    /* Main content */
-    main {
-        /* This will uush main content down to allow for a larger header on larger screens */
-        margin-top: 79px;
-    }
+/* Main content */
+main {
+    /* This will push main content down to allow for a larger header on larger screens */
+    margin-top: 79px;
+}
 
-    /* Media Query: Large devices (laptops and desktops, 992px and up) */
-    @media screen and (min-width: 992px) {
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero.webp")no-repeat center center/cover;
+}
 
-        /*On hover line will appear under text to indicate it is clickable*/
-        #menu a:hover {
-            border-bottom: 1px solid #3a3a3a;
-        }
+/* Media Query: Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+    /* On hover line will appear under text to indicate it is clickable */
+
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
