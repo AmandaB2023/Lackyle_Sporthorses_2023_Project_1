@@ -106,6 +106,9 @@ main {
     background-color: blueviolet;
     /* Add margin at the top to prevent content from being covered by the header */
     margin-top: 47px;
+    /* Enables flex properties for child elements */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
@@ -159,6 +162,29 @@ footer {
     color: #ffffff;
 }
 
+/*Contact Us Form*/
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -209,6 +235,27 @@ main {
     right: 50px;
 }
 
+/* Contact Us Form */
+#contact_us {
+    background-position: center;
+    position: relative;
+}
+
+#contact-form {
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+}
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.contac-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
+}
 
 /* Media Query: Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
