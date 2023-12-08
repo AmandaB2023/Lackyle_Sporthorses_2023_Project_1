@@ -23,6 +23,10 @@ header {
     background-color: white;
 }
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
 /*Main*/
 main {
     /* Enlarged main element to push footer down*/
