@@ -20,13 +20,16 @@ body {
 
 /*Header*/
 header {
-    background-color: white;
+    background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
-    ;
+    /*Should make menu and logo show in a row*/
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -38,22 +41,51 @@ h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #123;
+    color: #112233;
 }
 
+/*This should remove the bullet points in front of the menu items and space them out*/
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
-#menu li {
+/*Margin for the menu*/
+#menu>li {
     margin-bottom: 1em;
 }
 
 /*This shows a line under the title of the page which is currently active*/
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+/*Navigation Menu Styles with dropdown*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0 1 rem;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    /*This tells  Navigation Menu that it should start at the botton of the parent elemnet */
+    top: 100%
+}
+
+/*Navigation Menu toggle*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+/*Hides checkbox*/
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /*Main*/
