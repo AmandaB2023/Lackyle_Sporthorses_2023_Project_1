@@ -103,6 +103,23 @@ footer {
     background-color: #112233;
 }
 
+/* Social Network icon formatting */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    /*Displays icons in a line*/
+    list-style-type: none;
+}
+
+/*Targets Social media icons*/
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #ffffff;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
