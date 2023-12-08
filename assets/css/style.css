@@ -74,7 +74,7 @@ nav {
     top: 100%
 }
 
-/*Navigation Menu toggle*/
+/*Navigation Menu toggle, when checked display in block*/
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -84,6 +84,7 @@ nav {
     display: none;
 }
 
+/*Toggle label size*/
 .nav-toggle-label {
     font-size: 2rem;
 }
@@ -100,4 +101,20 @@ main {
 /*Footer*/
 footer {
     background-color: blue;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        /*Displays inside header*/
+        position: relative;
+        /* box shadow removed */
+        box-shadow: none;
+        /*Menu items will sit to the right of the screen*/
+        width: fit-content;
+        padding-right: 1rem;
+    }
 }
