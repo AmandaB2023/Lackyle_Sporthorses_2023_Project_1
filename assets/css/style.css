@@ -170,7 +170,7 @@ footer {
 #contact {
     background-image: url("../images/contact.webp");
     background-size: cover;
-    background-position: 80%;
+    background-position: 70%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
 
@@ -178,13 +178,12 @@ footer {
 
 /*Contact form text and backround color*/
 #contact-form {
-    color: #0b0404;
-    background-color: rgba(60, 60, 60, 0.6);
-    ;
-    padding: 30px;
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.7);
+    padding: 10px;
 }
 
-/*Targetsthe h2 elements on the contact form*/
+/*Targets the h2 elements on the contact form*/
 #contact-form>h2 {
     color: #fafafa;
     margin-bottom: 20px;
@@ -206,7 +205,7 @@ footer {
 .contact-button {
     margin-top: 20px;
     border-radius: 2px;
-    padding: 15px 32px;
+    padding: 5px 10px;
     font-size: 100%;
     background-color: #112233;
     color: #fafafa;
