@@ -18,20 +18,23 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/*Targets all h1 fonts*/
 h1 {
     font-family: 'Oswald', sans-serif;
-
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
 
+/*Targets all h2 and h3 fonts*/
 h2,
 h3 {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     color: #252525;
 }
+
+
 
 /*Header*/
 header {
@@ -79,6 +82,7 @@ nav {
     width: 100%;
     left: 0;
     box-shadow: 0 2px 2px #3a3a3a;
+    /*Menuy itens hidden untill clicked*/
     display: none;
     /*This tells  Navigation Menu that it should start at the botton of the parent elemnet */
     top: 100%
@@ -172,17 +176,21 @@ footer {
 
 }
 
+/*Contact form text and backround color*/
 #contact-form {
-    color: #8b3434;
-    background-color: rgba(194, 191, 228, 0.6);
+    color: #0b0404;
+    background-color: rgba(60, 60, 60, 0.6);
+    ;
     padding: 30px;
 }
 
+/*Targetsthe h2 elements on the contact form*/
 #contact-form>h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
 
+/*Contact form text imput boxes*/
 .text-input {
     background: transparent;
     color: #fafafa;
@@ -194,6 +202,7 @@ footer {
     padding: 0 5px;
 }
 
+/*Contact form submit button*/
 .contact-button {
     margin-top: 20px;
     border-radius: 2px;
@@ -236,7 +245,7 @@ footer {
 
 /*Logo will display bigger on larger screen size*/
 #logo {
-    font-size: 280%;
+    font-size: 200%;
     line-height: 75px;
     margin: 0 0.5rem;
 }
