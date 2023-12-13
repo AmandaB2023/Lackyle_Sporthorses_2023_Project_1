@@ -29,7 +29,7 @@ h1 {
 /*Targets all h2 and h3 fonts*/
 h2,
 h3 {
-    font-family: 'Noto', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     letter-spacing: 2px;
     color: #252525;
 }
@@ -47,7 +47,7 @@ header {
     /*Should make menu and logo show in a row*/
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 header a {
@@ -266,6 +266,38 @@ h5 {
     background-color: #112233;
     color: #fafafa;
 }
+
+/*Thank You Page for Contact Form*/
+#thank_you {
+    background-image: url("../images/lackyle_contact.webp");
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    background-position: 50%;
+    padding: 20px 20% 0 10%;
+    margin-top: 20px;
+    flex-grow: 1;
+
+}
+
+#thank_you_form {
+    color: #ffffff;
+    background-color: rgba(17, 35, 63, 0.7);
+    padding: 10px;
+}
+
+/*Targets the h1 and h2 elements on the thank you form*/
+#thank_you_form>h1,
+h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+#thank_you_form h3 {
+    color: #c7d0d9;
+    margin-bottom: 20px;
+}
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
