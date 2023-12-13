@@ -55,6 +55,12 @@ header a {
     color: inherit;
 }
 
+/*Header logo size*/
+.logo {
+    width: 120px;
+    height: 80px;
+
+}
 
 
 /*This should remove the bullet points in front of the menu items and space them out*/
