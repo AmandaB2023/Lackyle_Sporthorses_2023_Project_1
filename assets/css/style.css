@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@300&family=Noto+Serif:wght@300&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -15,12 +15,12 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Monserrat', sans-serif;
 }
 
 /*Targets all h1 fonts*/
 h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -29,7 +29,7 @@ h1 {
 /*Targets all h2 and h3 fonts*/
 h2,
 h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Noto', sans-serif;
     letter-spacing: 2px;
     color: #252525;
 }
@@ -59,7 +59,6 @@ header a {
 .logo {
     width: 120px;
     height: 80px;
-
 }
 
 
@@ -80,7 +79,8 @@ header a {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*Navigation Menu Styles with dropdown*/
+
+/*Navigation Menu*/
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -88,11 +88,13 @@ nav {
     width: 100%;
     left: 0;
     box-shadow: 0 2px 2px #3a3a3a;
-    /*Menuy itens hidden untill clicked*/
+    /*Menu itens hidden untill user clicks to open*/
     display: none;
     /*This tells  Navigation Menu that it should start at the botton of the parent elemnet */
     top: 100%
 }
+
+
 
 /*Navigation Menu toggle, when checked display in block*/
 #nav-toggle:checked~nav {
@@ -107,6 +109,7 @@ nav {
 /*Toggle label size*/
 .nav-toggle-label {
     font-size: 2rem;
+    color: #112233;
 }
 
 /*Main*/
@@ -126,7 +129,7 @@ main {
     height: 600px;
     width: 100%;
     /*Image centered horizontally and vertically*/
-    background: url("../images/hero.webp")no-repeat center center/cover;
+    background: url("../images/lackyle-hero.webp")no-repeat center center/cover;
     position: relative;
 }
 
@@ -231,70 +234,73 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
-}
 
-/* Navigation Menu items will in a row on larger screens*/
-#menu {
-    display: flex;
-}
 
-/*To space menu items out*/
-#menu>li {
-    padding-left: 1rem;
-}
+    /* Navigation Menu items will in a row on larger screens*/
+    #menu {
+        display: flex;
+    }
 
-/*X hidden on larger screens*/
-.nav-toggle-label {
-    display: none;
-}
+    /*To space menu items out*/
+    #menu>li {
+        padding-left: 1rem;
+    }
 
-/*Logo will display bigger on larger screen size*/
-#logo {
-    font-size: 200%;
-    line-height: 75px;
-    margin: 0 0.5rem;
-}
+    /*X hidden on larger screens*/
+    .nav-toggle-label {
+        display: none;
+    }
 
-/* Main content */
-main {
-    /* This will push main content down to allow for a larger header on larger screens */
-    margin-top: 79px;
-}
+    /*Logo will display bigger on larger screen size*/
+    .logo {
+        width: 160px;
+        height: 110px;
+        padding-top: 2px;
+    }
 
-/* Hero image */
-#cover-text {
-    width: 300px;
-    right: 50px;
-}
+    /* Main content */
+    main {
+        /* This will push main content down to allow for a larger header on larger screens */
+        margin-top: 79px;
+    }
 
-/* Contact Us Form */
-#contact_us {
-    background-position: center;
-    position: relative;
-}
+    /* Hero image */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
 
-#contact-form {
-    max-width: 400px;
-    position: absolute;
-    left: 10%;
-    top: 150px;
-}
+    /* Contact Us Form */
+    #contact_us {
+        background-position: center;
+        position: relative;
+    }
 
-.text-input:hover {
-    border-color: #f16c6b;
-}
+    #contact-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
 
-.contac-button:hover {
-    background-color: #fafafa;
-    color: #454b1b;
-}
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
 
-/* Media Query: Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
+    .contac-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
 
-    /* On hover line will appear under text to indicate it is clickable */
+    /* Media Query: Large devices (laptops and desktops, 992px and up) */
+    @media screen and (min-width: 992px) {
 
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
+        /* On hover line will appear under text to indicate it is clickable */
+
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+            padding: 10px;
+            background-color: #c7d0d9;
+        }
     }
 }

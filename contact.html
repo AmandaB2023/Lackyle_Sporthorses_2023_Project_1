@@ -22,7 +22,7 @@
     <!--Header-->
     <header>
         <a href="index.html">
-            <h1 id="logo">Lackyle Sporthorses</h1>
+            <img class="logo" src="assets/images/logo_lackyle.png" alt="Lackyle Sporthorses Logo and link to homepage">
         </a>
         <!--Checkbox to toggle menu-->
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
@@ -46,7 +46,7 @@
     <main>
         <!--Contact Us-->
         <section id="contact">
-            <form id="contact-form" method="POST" action="Thank You">
+            <form id="contact-form" method="GET" action="thank_you.html">
 
 
                 <h2>Contact Us</h2>
@@ -61,7 +61,7 @@
                 <input type="email" name="email_address" id="email_address" class="text-input" required>
                 <br>
                 <label for="phone_number">Phone Number</label>
-                <input type="phone" name="phone_number" id="phone_number" class="number-input" required>
+                <input type="tel" name="phone_number" id="phone_number" class="number-input" required>
                 </label>
                 <button type="submit" class="contact-button">Contact Us </button>
             </form>
