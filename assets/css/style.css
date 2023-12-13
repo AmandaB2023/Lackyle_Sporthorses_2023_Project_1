@@ -195,7 +195,7 @@ main {
 /*Advert image*/
 .advert img {
     width: 100%;
-    height: auto;
+    height: 350px;
 
 }
 
@@ -235,6 +235,64 @@ main {
 
 .advert:hover {
     transform: translateY(-20px);
+}
+
+/*404 Error page*/
+/* Hero section */
+#error {
+    height: 450px;
+    width: 100%;
+    /*Image centered horizontally and vertically*/
+    background: url("../images/error.webp")no-repeat center center/cover;
+    position: relative;
+    text-align: center;
+}
+
+/*Text ontop on the Hero image*/
+#error-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(239, 239, 240, 0.8);
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+/*Cover text size and color*/
+#error-text h1 {
+    font-size: 100px;
+    margin: 0%;
+    font-weight: 900;
+    letter-spacing: 15px;
+    color: #112233;
+}
+
+
+#error-text h2,
+#error-text h4 {
+    color: #112233;
+}
+
+#error_button a {
+    display: inline-block;
+    margin: 8px;
+    text-decoration: none;
+    border: 2px solid #112233;
+    background-color: #112233;
+    color: #ffffff;
+    font-weight: 20px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.3 ease;
+}
+
+#error_button a:hover {
+    background-color: #ffffff;
+    color: #112233;
+
 }
 
 /*Footer*/
@@ -461,6 +519,18 @@ h2 {
         background-color: #c7d0d9;
         color: #112233;
 
+    }
+
+    /*Text properties for the for sale page*/
+    #for_sale>h1,
+    #for_sale>h2,
+    #for_sale>h3 {
+        width: 90%;
+        margin: 20px auto;
+        color: #ffffff;
+        margin-top: 20%;
+        text-align: center;
+        font-size: 280%;
     }
 
     /* Media Query: Large devices (laptops and desktops, 992px and up) */
