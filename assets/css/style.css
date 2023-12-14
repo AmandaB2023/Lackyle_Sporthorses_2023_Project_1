@@ -126,10 +126,10 @@ main {
 
 /* Hero section */
 #hero {
-    height: 600px;
+    height: 550px;
     width: 100%;
     /*Image centered horizontally and vertically*/
-    background: url("../images/lackyle-hero.webp")no-repeat center center/cover;
+    background: url("../images/hero23.png")no-repeat center center/cover;
     position: relative;
 }
 
@@ -157,8 +157,8 @@ main {
 /* For sale page heading */
 #for_sale_page {
     width: 90%;
-    margin: 30px auto;
-    margin-top: 100px;
+    margin: 5px auto;
+    margin-top: 50px;
 }
 
 /* will apply styling to the h2 element at the top of the for sale page */
@@ -175,10 +175,8 @@ main {
 }
 
 /*Advert container*/
-#advert-container {
+.advert_container {
     display: flex;
-    background-color: aqua;
-    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 10px;
@@ -187,8 +185,8 @@ main {
 .advert {
     width: 325px;
     background-color: #fafafa;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 20px;
+    overflow: clip;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
     transition: transform 0.6s ease;
@@ -197,7 +195,7 @@ main {
 /*Advert image*/
 .advert img {
     width: 100%;
-    height: 350px;
+    height: auto;
 
 }
 
@@ -206,6 +204,10 @@ main {
     padding: 16px
 }
 
+.advert_content h2 {
+    margin-bottom: 8px;
+    color: #112233;
+}
 
 .advert_content h3 {
     font-size: 28px;
@@ -255,7 +257,7 @@ main {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(239, 239, 240, 0.8);
     position: absolute;
-    bottom: 30px;
+    bottom: 40%;
     width: 100%;
     min-height: 200px;
     padding-top: 40px;
@@ -353,7 +355,7 @@ h5 {
 
 /*Contact Us Form*/
 #contact {
-    background-image: url("../images/lackyle_contact.webp");
+    background-image: url("../images/clover.png");
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -365,14 +367,14 @@ h5 {
 }
 
 /*Contact form text and backround color*/
-#contact-form {
+.contact-form {
     color: #ffffff;
     background-color: rgba(17, 35, 63, 0.7);
     padding: 10px;
 }
 
 /*Targets the h2 elements on the contact form*/
-#contact-form>h2 {
+.contact-form>h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
@@ -412,32 +414,21 @@ h5 {
 }
 
 /*Thank You Page for Contact Form*/
-#thank_you {
-    background-image: url("../images/lackyle_contact.webp");
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-    background-position: 50%;
-    padding: 20px 20% 0 10%;
-    margin-top: 20px;
-    flex-grow: 1;
-
-}
-
-#thank_you_form {
+/*Contact form text and backround color*/
+.thank_you_form {
     color: #ffffff;
     background-color: rgba(17, 35, 63, 0.7);
     padding: 10px;
 }
 
 /*Targets the h1 and h2 elements on the thank you form*/
-#thank_you_form>h1,
+.thank_you_form>h1,
 h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
 
-#thank_you_form h3 {
+.thank_you_form h3 {
     color: #c7d0d9;
     margin-bottom: 20px;
 }
@@ -476,9 +467,9 @@ h2 {
 
     /*Logo will display bigger on larger screen size*/
     .logo {
-        width: 160px;
-        height: 110px;
-        padding-top: 2px;
+        width: 140px;
+        height: 90px;
+
     }
 
     /* Main content */
@@ -504,7 +495,7 @@ h2 {
         position: relative;
     }
 
-    #contact-form {
+    .contact-form {
         max-width: 400px;
         position: absolute;
         left: 10%;
