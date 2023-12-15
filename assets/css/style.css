@@ -158,14 +158,14 @@ main {
 
 /*Main content for sale page*/
 /* For sale page heading */
-/for_sale_page {
+.for_sale_page {
     width: 90%;
     margin: 30px auto;
     margin-top: 100px;
 }
 
 /* will apply styling to the h2 element at the top of the for sale page */
-/for_sale_page h2 {
+.for_sale_page h2 {
     margin-bottom: 20px;
     text-align: center;
     font-size: 200%;
@@ -173,13 +173,12 @@ main {
 }
 
 /* will apply styling to the h3 element*/
-for_sale_page h3 {
+#for_sale_page h3 {
     color: #ffffff;
 }
 
-/*/
-*Advert container*/
-.advert_container {
+/*Advert container*/
+.horse_container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -190,14 +189,14 @@ for_sale_page h3 {
     width: 325px;
     background-color: #fafafa;
     border-radius: 8px;
-    border: 4px solid var(--lightgreen);
+    overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
     transition: transform 0.6s ease;
 }
 
 /*Advert image*/
-.advert img {
+.card img {
     width: 100%;
     height: auto;
 
@@ -520,7 +519,7 @@ h2 {
     }
 
     /*Text properties for the for sale page*/
-    #for_sale>h1,
+    /* #for_sale>h1,
     #for_sale>h2,
     #for_sale>h3 {
         width: 90%;
